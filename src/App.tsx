@@ -3,7 +3,6 @@ import './App.css';
 
 /*
 TODO 
-0. Add useLocalStorage custom hook 
 1. Add a controlled - text field where a user can type 
 2. Test it 
 3. Add character / word count component 
