@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
+import { UserInput } from './components/UserInput';
+import { useLocalStorage } from './hooks/useLocalStorage';
 
 /*
 TODO 
-1. Add a controlled - text field where a user can type 
-2. Test it 
 3. Add character / word count component 
 4. Test it 
 5. Add a component providing letter density insights 
@@ -17,9 +17,11 @@ TODO
 */
 
 export const App: React.FC = () => {
+  const [value, setValue] = useLocalStorage('user-bio', '');
   return (
     <div className="App">
       <h1>Bio Helper</h1>
+      <UserInput input={value} setInput={setValue} />
     </div>
   );
 };
