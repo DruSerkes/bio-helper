@@ -19,8 +19,15 @@ export const App: React.FC = () => {
   return (
     <div className="App">
       <h1>Bio Helper</h1>
-      <UserInput input={bio} setInput={setBio} />
-      <CounterTable bio={bio} />
+      <main>
+        <UserInput input={bio} setInput={setBio} />
+        <div className="Insights">
+          <h3>Insights</h3>
+          <CounterTable bio={bio} />
+        </div>
+
+      </main>
+
     </div>
   );
 };
