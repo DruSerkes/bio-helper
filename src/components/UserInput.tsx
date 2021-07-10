@@ -3,7 +3,7 @@ import * as React from 'react';
 interface UserInputProps {
   input?: string,
   setInput: React.Dispatch<React.SetStateAction<string>>
-}
+};
 
 export const UserInput: React.FC<UserInputProps> = ({ input, setInput }) => {
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => setInput(e.target.value);
