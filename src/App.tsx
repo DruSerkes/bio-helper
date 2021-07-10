@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { UserInput } from './components/UserInput';
 import { useLocalStorage } from './hooks/useLocalStorage';
-
+import { CounterTable } from './components/CounterTable';
 /*
 TODO 
 3. Add character / word count component 
@@ -17,11 +17,12 @@ TODO
 */
 
 export const App: React.FC = () => {
-  const [value, setValue] = useLocalStorage('user-bio', '');
+  const [bio, setBio] = useLocalStorage('user-bio', '');
   return (
     <div className="App">
       <h1>Bio Helper</h1>
-      <UserInput input={value} setInput={setValue} />
+      <UserInput input={bio} setInput={setBio} />
+      <CounterTable bio={bio} />
     </div>
   );
 };

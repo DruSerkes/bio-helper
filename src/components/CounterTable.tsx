@@ -1,12 +1,12 @@
 import * as React from 'react';
 
 interface CounterTableProps {
-  value: string
+  bio: string
 };
 
-export const CounterTable: React.FC<CounterTableProps> = ({ value }) => {
-  const characterCount = value.length;
-  const wordCount = value.split(' ').length;
+export const CounterTable: React.FC<CounterTableProps> = ({ bio }) => {
+  const characterCount = bio.length;
+  const wordCount = bio.split(' ').length;
   return (
     <table className="CounterTable">
       <tbody>
