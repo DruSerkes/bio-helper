@@ -5,8 +5,6 @@ import { useLocalStorage } from './hooks/useLocalStorage';
 import { CounterTable } from './components/CounterTable';
 /*
 TODO 
-3. Add character / word count component 
-4. Test it 
 5. Add a component providing letter density insights 
 6. Test it 
 7. Add copy / clear buttons 
