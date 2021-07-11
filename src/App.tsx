@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { UserInput } from './components/UserInput';
 import { useLocalStorage } from './hooks/useLocalStorage';
-import { CounterTable } from './components/CounterTable';
+import { Insights } from './components/Insights';
 /*
 TODO 
 5. Add a component providing letter density insights 
@@ -21,11 +21,7 @@ export const App: React.FC = () => {
       <h1>Bio Helper</h1>
       <main>
         <UserInput input={bio} setInput={setBio} />
-        <div className="Insights">
-          <h3>Insights</h3>
-          <CounterTable bio={bio} />
-        </div>
-
+        <Insights bio={bio} />
       </main>
 
     </div>
