@@ -6,7 +6,7 @@
   align-items: center;
   height: 100vh;
   line-height: 1.2rem;
-  
+
 }
 
 main {
@@ -26,8 +26,7 @@ h3 {
 }
 
 .UserInput, 
-.Insights, 
-.CounterTable {
+.Insights {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -36,17 +35,30 @@ h3 {
   height: 75vh;
 }
 
-.CounterTable {
+.Insights > article{
+  align-items: flex-start;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 3px;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: flex-start;
+  margin: 1rem 3rem;
+  min-width: 200px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.CounterTable, 
+.LetterDensityTable {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   min-width: 200px;
   width: 100%;
-  margin: 1rem 3rem;
   padding: 0.5rem;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 3px;
 }
 
 label {
@@ -86,6 +98,14 @@ tr {
 
 tr > td:first-child {
   font-weight: 500;
+}
+
+h4 {
+  margin: 0 auto 0.25rem;
+}
+
+hr {
+  width: 100%;
 }
 
 /* LARGE */
