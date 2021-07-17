@@ -5,8 +5,6 @@ import { useLocalStorage } from './hooks/useLocalStorage';
 import { Insights } from './components/Insights';
 /*
 TODO 
-5. Add a component providing letter density insights 
-6. Test it 
 7. Add copy / clear buttons 
 8. Test them 
 9. Add social media insights component 
