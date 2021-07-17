@@ -1,15 +1,6 @@
-
 interface freqCounterType {
 	[key: string]: number
 }
-// export const countLetters = (letters: string) => {
-//     const frequencyCounter: freqCounterType = {};
-//     const characterArray = [...letters];
-//     characterArray.forEach(character => {
-//         frequencyCounter[character] = frequencyCounter[character] ? frequencyCounter[character] + 1 : 1;
-//     });
-//     return frequencyCounter;
-// };
 
 export const countLetters = (letters: string) => {
 	const characterArray = [...letters];
@@ -24,4 +15,4 @@ export const filterTopTen = (chars: freqCounterType) => {
 	entries.sort((a, b) => b[1] - a[1]);
 	const withoutSpaces = entries.filter(entry => entry[0].trim() !== "");
 	return withoutSpaces.slice(0, 10);
-}
+};
