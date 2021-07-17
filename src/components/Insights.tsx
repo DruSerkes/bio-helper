@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { CounterTable } from './CounterTable';
 import { LetterDensityTable } from './LetterDensityTable';
+import { SocialMediaTable } from './SocialMediaTable';
 
 interface InsightsProps {
   bio: string
@@ -21,6 +22,7 @@ export const Insights: React.FC<InsightsProps> = ({ bio }) => {
         <LetterDensityTable bio={bio} />
 
         <hr />
+        <SocialMediaTable bio={bio} minLength={40} />
       </article>
     </div>
   )
