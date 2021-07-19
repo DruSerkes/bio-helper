@@ -7,8 +7,7 @@ import { Insights } from './components/Insights';
 TODO 
 7. Add copy / clear buttons 
 8. Test them 
-9. Add social media insights component 
-10. Test them 
+10. Test social media component
 11. Decide what other features to add 
 */
 
