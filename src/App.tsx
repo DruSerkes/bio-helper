@@ -5,10 +5,13 @@ import { useLocalStorage } from './hooks/useLocalStorage';
 import { Insights } from './components/Insights';
 /*
 TODO 
-7. Add copy / clear buttons 
-8. Test them 
-10. Test social media component
-11. Decide what other features to add 
+1. Add copy / clear buttons 
+2. Test them 
+3. Decide what other features to add 
+  a. further insights (social media based)?
+  b. dark mode 
+  c. set min/max length - view alert when you are under / over  
+  d. toggle certain insights off / on
 */
 
 export const App: React.FC = () => {
