@@ -16,7 +16,7 @@ export const SocialMediaTable: React.FC<SocialMediaTableProps> = ({ bio, minLeng
           <tr>
             <td>
               <small>
-                Include your social media handle so fans can follow you!
+                Don't forget your social media handle!
               </small>
             </td>
           </tr>
