@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/bio-helper/static/css/main.2e578224.chunk.css",
+    "main.js": "/bio-helper/static/js/main.a66de7db.chunk.js",
+    "main.js.map": "/bio-helper/static/js/main.a66de7db.chunk.js.map",
+    "runtime-main.js": "/bio-helper/static/js/runtime-main.df2d09cf.js",
+    "runtime-main.js.map": "/bio-helper/static/js/runtime-main.df2d09cf.js.map",
+    "static/js/2.ce610ecc.chunk.js": "/bio-helper/static/js/2.ce610ecc.chunk.js",
+    "static/js/2.ce610ecc.chunk.js.map": "/bio-helper/static/js/2.ce610ecc.chunk.js.map",
+    "index.html": "/bio-helper/index.html",
+    "static/css/main.2e578224.chunk.css.map": "/bio-helper/static/css/main.2e578224.chunk.css.map",
+    "static/js/2.ce610ecc.chunk.js.LICENSE.txt": "/bio-helper/static/js/2.ce610ecc.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/bio-helper/static/media/Avenir Light.8f47513e.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.df2d09cf.js",
+    "static/js/2.ce610ecc.chunk.js",
+    "static/css/main.2e578224.chunk.css",
+    "static/js/main.a66de7db.chunk.js"
+  ]
+}
