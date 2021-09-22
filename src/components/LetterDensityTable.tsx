@@ -13,7 +13,7 @@ export const LetterDensityTable: React.FC<LetterDensityTableProps> = ({ bio }) =
       <tbody>
         {topTenLettersWithCount.map((letterWithCount) => (
           <tr key={letterWithCount[0]}>
-            <td className="LetterDensityTable-Left">{letterWithCount[0]}</td>
+            <td className="LetterDensityTable-Left"><b>{letterWithCount[0]?.toUpperCase()}</b></td>
             <td className="LetterDensityTable-Right">{letterWithCount[1]}</td>
           </tr>
         )
