@@ -1,7 +1,14 @@
+@font-face {
+  font-family: 'Avenir light';
+  src: url('./Avenir\ Light.ttf');
+}
+
 .App {
   align-items: center;
   display: flex;
+  font-family: 'Avenir light';
   flex-direction: column;
+  letter-spacing: 1px;
   min-height: 100vh;
   height: 100%;
   justify-content: flex-start;
@@ -51,7 +58,8 @@ h3 {
 }
 
 .CounterTable, 
-.LetterDensityTable {
+.LetterDensityTable,
+.SocialMediaTable {
   align-items: flex-start;
   border-radius: 5px;
   display: flex;
@@ -62,18 +70,24 @@ h3 {
   width: 100%;
 }
 
-.SocialMediaTable {
+/* .SocialMediaTable {
   font-size: 0.75rem;
   margin: 0;
   padding: 0;
   position: relative;
-}
+  width: 100%;
+} */
 
-.SocialMediaTable > tr > td > small {
+/* .SocialMediaTable > tr {
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* .SocialMediaTable > tr > td > small {
   margin: 0;
   padding: 0;
   position: absolute;
-}
+} */
 
 label {
   font-size: 2rem;
@@ -84,7 +98,9 @@ label {
 textarea {
   border: none;
   box-shadow: 0 0 5px #bac4ab;
+  font-family: 'Avenir light', 'Courier New', Courier, monospace;
   height: 100%;
+  letter-spacing: 1px;
   line-height: 1.2rem;
   margin: 1rem 0;
   min-width: 400px;
@@ -106,8 +122,13 @@ tbody {
 }
 
 tr {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: space-between;
+}
+
+tr:first-child {
+  border-top: none;
 }
 
 tr > td:first-child {

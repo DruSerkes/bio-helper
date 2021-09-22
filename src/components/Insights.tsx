@@ -13,16 +13,18 @@ export const Insights: React.FC<InsightsProps> = ({ bio }) => {
     <div className="Insights">
       <h3>Insights</h3>
       <article>
-        <h4>Character Count</h4>
+        <h4>Essential Counts</h4>
         <CounterTable bio={bio} />
+
+        <hr />
+
+        <h4>Social Insights</h4>
+        <SocialMediaTable bio={bio} minLength={40} />
 
         <hr />
 
         <h4>Letter Density</h4>
         <LetterDensityTable bio={bio} />
-
-        <hr />
-        <SocialMediaTable bio={bio} minLength={40} />
       </article>
     </div>
   )

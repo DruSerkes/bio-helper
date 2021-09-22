@@ -20,8 +20,13 @@ export const App: React.FC = () => {
     <div className="App">
       <h1>Bio Helper</h1>
       <main>
-        <UserInput input={bio} setInput={setBio} />
-        <Insights bio={bio} />
+        <div className="Left">
+          <UserInput input={bio} setInput={setBio} />
+
+        </div>
+        <div className="Right">
+          <Insights bio={bio} />
+        </div>
       </main>
 
     </div>
