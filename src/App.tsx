@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import './App.css';
 import { UserInput } from './components/UserInput';
 import { useLocalStorage } from './hooks/useLocalStorage';
@@ -22,7 +22,6 @@ export const App: React.FC = () => {
       <main>
         <div className="Left">
           <UserInput input={bio} setInput={setBio} />
-
         </div>
         <div className="Right">
           <Insights bio={bio} />
