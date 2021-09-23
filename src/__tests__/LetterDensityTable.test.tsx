@@ -15,8 +15,10 @@ describe('LetterDensityTable tests', () => {
   it('should show the letters', () => {
     const { getByText } = render(<LetterDensityTable bio={bio} />);
     topTenLettersWithCount.forEach(letterWithCount => {
-      const letter = getByText(letterWithCount[0]);
+      const letter = getByText(letterWithCount[0].toUpperCase());
       expect(letter).toBeInTheDocument();
     });
   });
+
+
 });
