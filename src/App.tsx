@@ -5,9 +5,9 @@ import { useLocalStorage } from './hooks/useLocalStorage';
 import { Insights } from './components/Insights';
 /*
 TODO 
-1. Add copy / clear buttons 
-2. Test them 
-3. Decide what other features to add 
+0. Style the buttons
+1. Test the buttons 
+2. Decide what other features to add 
   a. further insights (social media based)?
   b. dark mode 
   c. set min/max length - view alert when you are under / over  
