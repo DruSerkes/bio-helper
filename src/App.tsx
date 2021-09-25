@@ -5,7 +5,6 @@ import { useLocalStorage } from './hooks/useLocalStorage';
 import { Insights } from './components/Insights';
 /*
 TODO 
-1. Test the buttons 
 2. Decide what other features to add 
   a. further insights (social media based)?
   b. dark mode 
