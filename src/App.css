@@ -24,12 +24,18 @@ main {
 }
 
 h1 {
+  display: inline-block;
   font-size: 3rem;
 }
 
 h3 {
   font-size: 2rem;
   margin: 0 0 1rem 0;
+}
+
+header {
+  position: relative;
+  width: 100%;
 }
 
 .UserInput, 
@@ -93,6 +99,68 @@ label {
   font-size: 2rem;
   font-weight: bold;
   margin: 0 0 1rem 0;
+}
+
+.switch {
+  display: inline-block;
+  height: 40px;
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  width: 75px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: hsl(300, 20%, 5%);
+  content: "";
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  left: 4%;
+  top: 10%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: hsl(207, 90%, 34%);
+}
+
+input:focus + .slider {
+  background-color: hsl(207, 90%, 34%);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px);
+  background-color: hsl(300, 20%, 90%);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 textarea {

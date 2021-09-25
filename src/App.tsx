@@ -16,7 +16,13 @@ export const App: React.FC = () => {
   const [bio, setBio] = useLocalStorage('user-bio', '');
   return (
     <div className="App">
-      <h1>Bio Helper</h1>
+      <header>
+        <h1>Bio Helper</h1>
+        <label className="switch">
+          <input type="checkbox" />
+          <span className="slider round"></span>
+        </label>
+      </header>
       <main>
         <div className="Left">
           <UserInput input={bio} setInput={setBio} />
