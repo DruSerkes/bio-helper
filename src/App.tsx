@@ -11,15 +11,18 @@ TODO
   c. set min/max length - view alert when you are under / over  
   d. toggle certain insights off / on
 */
+const { useState } = React;
 
 export const App: React.FC = () => {
+  const [darkMode, setDarkMode] = useState(false);
   const [bio, setBio] = useLocalStorage('user-bio', '');
+  const toggleDarkMode = () => setDarkMode(previousMode => !previousMode);
   return (
     <div className="App">
       <header>
         <h1>Bio Helper</h1>
         <label className="switch">
-          <input type="checkbox" />
+          <input type="checkbox" checked={darkMode} onChange={toggleDarkMode} />
           <span className="slider round"></span>
         </label>
       </header>
