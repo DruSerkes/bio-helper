@@ -30,7 +30,7 @@ export const App: React.FC = () => {
       </header>
       <main>
         <div className="Left">
-          <UserInput input={bio} setInput={setBio} />
+          <UserInput input={bio} setInput={setBio} darkMode={darkMode} />
         </div>
         <div className="Right">
           <Insights bio={bio} />
