@@ -112,7 +112,7 @@ label {
   position: absolute;
   top: 25%;
   right: 15%;
-  width: 75px;
+  width: 80px;
 }
 
 .switch input {
@@ -154,9 +154,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(36px);
-  -ms-transform: translateX(36px);
-  transform: translateX(36px);
+  -webkit-transform: translateX(43px);
+  -ms-transform: translateX(43px);
+  transform: translateX(43px);
   background-color: hsl(300, 20%, 90%);
 }
 
@@ -166,6 +166,20 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.moon:before {
+  background-image: url(https://media.istockphoto.com/vectors/realistic-full-moon-vector-id584764738?k=20&m=584764738&s=612x612&w=0&h=pgxfLj3IhOr2LQmWAsUQSqqrUwjSaotCAMxeRHMs2Kg=);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sun::before {
+  background-image: url(https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/07/the_sun_viewed_by_solar_orbiter_s_phi_instrument_on_18_june_2020/22136366-2-eng-GB/The_Sun_viewed_by_Solar_Orbiter_s_PHI_instrument_on_18_June_2020_pillars.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 textarea {

@@ -18,13 +18,15 @@ export const App: React.FC = () => {
   const [bio, setBio] = useLocalStorage('user-bio', '');
   const toggleDarkMode = () => setDarkMode(previousMode => !previousMode);
   return (
-    <div className="App">
+    <div className={`App ${darkMode ? 'dark' : ''}`}>
       <header>
         <h1>Bio Helper</h1>
         <label className="switch">
           <input type="checkbox" checked={darkMode} onChange={toggleDarkMode} />
-          <span className="slider round"></span>
+          <span className={`slider round ${darkMode ? 'sun' : 'moon'}`}></span>
         </label>
+
+
       </header>
       <main>
         <div className="Left">
