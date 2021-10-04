@@ -15,7 +15,9 @@ const { useState } = React;
 export const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [bio, setBio] = useLocalStorage('user-bio', '');
+  const [maxLength, setMaxLength] = useState(120);
   const toggleDarkMode = () => setDarkMode(previousMode => !previousMode);
+  const handleChangeMaxLength = (e: React.ChangeEvent<HTMLInputElement>): void => setMaxLength(Number(e.target.value));
   return (
     <div className={`App ${darkMode ? 'dark' : ''}`}>
       <header>
@@ -24,6 +26,32 @@ export const App: React.FC = () => {
           <input type="checkbox" checked={darkMode} onChange={toggleDarkMode} />
           <span className={`slider round ${darkMode ? 'sun' : 'moon'}`}></span>
         </label>
+
+        <div className="options-container">
+          <div className="col-1">
+            <h5>Max length</h5>
+            <div className="range-container">
+              <input
+                type="range"
+                name="max-length"
+                id="max-length"
+                min="40"
+                max="240"
+                step="5"
+                value={maxLength}
+                onChange={handleChangeMaxLength}
+              />
+              <output>{maxLength}</output>
+            </div>
+          </div>
+          <div className="col-2">
+
+          </div>
+          <div className="col-3">
+            <h5>Display Mode</h5>
+
+          </div>
+        </div>
 
 
       </header>
