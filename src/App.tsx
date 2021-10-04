@@ -41,14 +41,13 @@ export const App: React.FC = () => {
                 value={maxLength}
                 onChange={handleChangeMaxLength}
               />
-              <output>{maxLength}</output>
+              <output>{maxLength} words</output>
             </div>
           </div>
           <div className="col-2">
 
           </div>
           <div className="col-3">
-            <h5>Display Mode</h5>
 
           </div>
         </div>

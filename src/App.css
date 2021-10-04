@@ -21,6 +21,17 @@
   color: hsl(300, 20%, 90%);
 }
 
+.options-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.range-container {
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   align-items: flex-start;
   display: flex;
