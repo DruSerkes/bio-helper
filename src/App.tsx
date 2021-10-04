@@ -7,7 +7,6 @@ import { Insights } from './components/Insights';
 TODO 
 2. Decide what other features to add 
   a. further insights (social media based)?
-  b. dark mode 
   c. set min/max length - view alert when you are under / over  
   d. toggle certain insights off / on
 */
