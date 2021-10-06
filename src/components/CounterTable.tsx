@@ -19,7 +19,9 @@ export const CounterTable: React.FC<CounterTableProps> = ({ bio, maxLength }) =>
           <td className="CounterTable-Left">Word Count:</td>
           <td className="CounterTable-Right">{wordCount}</td>
         </tr>
-        {wordCount > maxLength && <td colSpan={2}>Max length exceeded!</td>}
+        <tr>
+          <td className="CounterTable-Length" colSpan={2}>{wordCount > maxLength && 'Max length exceeded!'}</td>
+        </tr>
       </tbody>
     </table>
   )

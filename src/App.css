@@ -92,6 +92,14 @@ header {
   width: 100%;
 }
 
+.CounterTable-Length {
+  color: red;
+  font-weight: bolder;
+  margin: 5px auto 0;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+}
 /* .SocialMediaTable {
   font-size: 0.75rem;
   margin: 0;
