@@ -59,7 +59,7 @@ export const App: React.FC = () => {
           <UserInput input={bio} setInput={setBio} darkMode={darkMode} />
         </div>
         <div className="Right">
-          <Insights bio={bio} />
+          <Insights bio={bio} maxLength={maxLength} />
         </div>
       </main>
 
